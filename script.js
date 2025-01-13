@@ -21,21 +21,33 @@ let email_error=document.getElementById("email-error") ;
     let flag = regex.test(email);
     if(fName==""){
         fname_error.textContent="First Name cann't be empty";
-        document.getElementById("firstName").classList.add("error");
+        document.getElementById("firstName").classList.toggle("error");
      document.getElementsByClassName("fname-error")[0].style.display="block"
+
+    }
+    else{
+     document.getElementsByClassName("fname-error")[0].style.display="none"
+     document.getElementById("firstName").style.borderColor='green'
 
     }
     if(lName==""){
         lname_error.textContent="Last Name cann't be empty";
-        document.getElementById("lastName").classList.add("error");
+        document.getElementById("lastName").classList.toggle("error");
      document.getElementsByClassName("lname-error")[0].style.display="block"
 
+    }else{
+     document.getElementsByClassName("lname-error")[0].style.display="none"
+     document.getElementById("lastName").style.borderColor='green'
     }
     if(password==""){
         pass_error.textContent="Password cann't be empty";
-        document.getElementById("password").classList.add("error");
+        document.getElementById("password").classList.toggle("error");
      document.getElementsByClassName("pass-error")[0].style.display="block"
 
+    }
+    else{
+        document.getElementsByClassName("pass-error")[0].style.display="none"
+        document.getElementById("password").style.borderColor='green'
     }
     if(email==""){
         email_error.textContent="Email cann't be empty ";
@@ -47,5 +59,13 @@ let email_error=document.getElementById("email-error") ;
      document.getElementsByClassName("email-error")[0].style.display="block"
      document.getElementById("email").classList.add("error");
      }
+else{
+        document.getElementById("email").style.borderColor='green'
+    document.getElementsByClassName("email-error")[0].style.display="none"
 
+}
+// document.getElementById("password").onchange(e){
+//    e.style.borderColor='green';
+
+// }
 }
