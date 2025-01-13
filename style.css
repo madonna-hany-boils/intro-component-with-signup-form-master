@@ -1,0 +1,132 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: "Montserrat", serif;}
+body{
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 80%;
+      margin: auto;
+}
+.main{
+    background-image: url('./images/bg-intro-desktop.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+}
+.section2 p{
+    text-align: center;
+    padding: 10px;
+}
+.section1{
+color: white;
+width: 50%;}
+.section2{
+    /* background-color: aliceblue;width: 50%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;width: 50%;
+}
+h1{
+    padding-block: 20px;
+}
+.try{
+    background-color: hsl(248, 32%, 49%);
+    height: 50px;
+    border: none;border-radius: 10px;
+    color: white;
+}
+.divInput{
+    width: 100%;
+    position: relative;
+}
+input{
+width:90%;
+margin: 20px;
+height: 40px;
+display: block;
+border-radius: 5px;
+border: 1px solid black;
+padding: 10px;
+caret-color: blueviolet;
+}
+.error::placeholder {
+    color: red;
+  }
+  input:focus::placeholder {
+    color: gray; /* Change color when the input is focused */
+  }
+  form img{
+    position: absolute;
+    left: 85%;
+    display: none;
+    top: 35%;
+  }
+
+form{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;  
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 20px;
+   position: relative;
+}
+a{
+    color: white;
+}
+span{
+    color: red;
+ 
+
+}
+.error-span{
+    color: red;
+    position: absolute;
+    right: 40px;
+
+}
+.error{
+    border-color: red;
+}
+.submit{
+    width: 80%;
+    height: 40px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: navajowhite;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-block: 20px;
+}
+.submit:hover{
+    background-color: hsl(154, 57%, 64%);
+}
+@media (max-width:760px) {
+    .container{width: 95%}
+    .main{
+        flex-direction: column;
+        height: auto;
+    }
+    p,h1{
+        text-align: center;
+        padding: 10px;}
+
+    
+
+}
